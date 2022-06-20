@@ -7,12 +7,19 @@ public class Division {
         } else {
             String word1Divis = strArrow[1];
             StringBuilder builder = new StringBuilder();
+            if (n == 1) {
+                System.out.println("\"");
+            } else if (n == 2) {
+                System.out.println("\"" + word1Divis.charAt(0));
 
-            for (int i = 0; i < n-2; i++) {
-                builder.append(word1Divis.charAt(i));
+            } else {
 
+                for (int i = 0; i < n - 2; i++) {
+                    builder.append(word1Divis.charAt(i));
+
+                }
+                System.out.println("\"" + builder + "\"");
             }
-            System.out.println("\"" + builder + "\"");
         }
     }
 }
